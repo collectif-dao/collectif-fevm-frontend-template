@@ -106,7 +106,7 @@ If everything goes well, you will see `generated` directory in the root of the p
 
 **Step 2.** After that, create a getter for your token address based on `config/example.ts`. This is a simple object that is used to dynamically access the address of your contract depending on the network.
 
-**Step 3.** Create the set of hooks using contractHooksFactory from `@lido-sdk/react`.
+**Step 3.** Create the set of hooks using contractHooksFactory from `sdk/factories`.
 
 ```ts
 // hooks/contracts.ts
