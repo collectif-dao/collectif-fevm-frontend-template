@@ -10,6 +10,7 @@ export const useErrorMessage = (): string | undefined => {
 
   const chains = useMemo(() => {
     if (supportedChains.length === 1) {
+      const {chainId, name } = supportedChains[0]; 
       const chainName = CHAINS[chainId] || name;
       const chainLink = `https://chainlist.org/?testnets=true&search=${chainName}`;
       return <Link href={chainLink}>{chainName}</Link>
